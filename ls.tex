@@ -1,0 +1,38 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{ls}
+\headerline{\large ls%
+    \index{ls}%
+    %\index{list}
+    \index{list|see{ls}}}%
+    {\emph{list files}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Prints a list of files and subdirectories in the current working directory.}\\
+
+\paragraph{Usage}
+\indentpar ls \textit{[options] [file...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file...}{files and directories to list (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{By default, lists the contents of the current working directory, excluding hidden files. Subsets of files or other directories may be specified.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-a}{show hidden files}\\
+\indentpar \optionline{-h}{print file sizes in human-readable format}\\
+\indentpar \optionline{-l}{print detailed information on each file}\\
+\indentpar \optionline{-r}{reverse the order in which files are listed}\\
+\indentpar \optionline{-t}{list files by time modified}
+
+
+\paragraph{Examples}
+
+\indentpar ls path/to/directory \\
+\indentpar ls -ahlrt \\
+\indentpar ls *.txt
+
+\vspace{20mm}

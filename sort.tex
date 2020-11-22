@@ -1,0 +1,34 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{sort}
+\headerline{\large sort\index{sort}}{\emph{sort file contents}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Sorts the lines of a file. The sort method to be used may be set to specifiy different behaviours.}\\
+
+\paragraph{Usage}
+\indentpar sort \textit{[options] file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to be sorted}\\
+\indentpar \argumentline{}{}
+
+\paragraph{Output}
+\indentpar \textrm{}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c}{check if file is already sorted}\\
+\indentpar \optionline{-f}{ignore case}\\
+\indentpar \optionline{-n}{use numeric sort}\\
+\indentpar \optionline{-r}{reverse order}\\
+\indentpar \optionline{-t \textit{char}}{use \texttt{char} as field delimiter}\\
+\indentpar \optionline{-u}{don't output duplicate lines}
+
+
+\paragraph{Examples}
+\indentpar sort -c file.txt\\
+\indentpar sort -ru file.txt
+
+\vspace{20mm}

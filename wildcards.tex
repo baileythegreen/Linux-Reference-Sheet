@@ -1,0 +1,29 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{wildcards}
+\headerline{\large wildcards%
+    \index{wildcards}%
+    \index{*|see{wildcards}}%
+    \index{star|see{wildcards}}%
+    \index{?|see{wildcards}}%
+    \index{question mark|see{wildcards}}}%
+    {\emph{specify all files that fit a pattern}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Special notation that can be used to indicate one or more characters that may be unknown, or to specify a group of files/directories that are similarly named.}\\
+
+\paragraph{Wildcard characters}
+\indentpar \argumentline{*}{zero or more characters}
+\indentpar \argumentline{?}{one character}
+
+\paragraph{Useful options}
+\indentpar \optionline{doc?.tsv}{matches files like doc1.tsv or doca.tsv}\\
+\indentpar \optionline{doc.???}{matches files like doc.tsv, doc.txt, doc.csv}
+\indentpar \optionline{*.tsv}{matches any file ending in .tsv}\\
+\indentpar \optionline{doc*.tsv}{matches  doc.tsv, doc1.tsv, doc1234.tsv, et cetera}\\
+\indentpar \optionline{doc.*}{matches doc.tsv, doc.txt, doc.tsv.gz}\\
+\indentpar \optionline{doc*}{matches doc.tsv, doc.txt, doc.tsv.gz, document1.tsv}
+
+\vspace{20mm}

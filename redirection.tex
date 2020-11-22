@@ -1,0 +1,31 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{redirection}
+\headerline{\large pipe%
+    \index{redirection}%
+    \index{pipe|see{redirection}}%
+    \index{\textbar|see{redirection}}%
+    \index{\textgreater|see{redirection}}%
+    \index{\textgreater\textgreater|see{redirection}}%
+    }%
+    {\emph{ways to redirect output from stdout}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Used following a command to pass the command's output into another command or write it to a file.}\\
+
+\paragraph{Redirection characters}
+\indentpar \argumentline{\textbar}{feed output to another command}
+\indentpar \argumentline{\textgreater}{write output to file (overwrites if file exists)}
+\indentpar \argumentline{\textgreater\textgreater}{write output to end of file (appends if file exists)}
+
+\paragraph{Examples}
+\indentpar ls *.txt | grep string\\
+\indentpar \optionline{}{searches for string inside all .txt files}\\
+\indentpar echo "Some text." > file.txt
+\indentpar \optionline{}{creates/overwrites file.txt and writes "Some text."}\\
+\indentpar echo "Some text." >> file.txt
+\indentpar \optionline{}{creates/opens file.txt; adds "Some text." to the end}\\
+
+\vspace{20mm}

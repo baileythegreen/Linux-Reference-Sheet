@@ -1,0 +1,27 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{rm}
+\headerline{\large rm\index{rm}}{\emph{remove files}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Remove the specified files. May also be used to remove directories using the \texttt{-r} option; this does not provide a warning in the case of non-empty directories.}\\
+
+\paragraph{Usage}
+\indentpar rm \textit{file [file2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to remove}\\
+\indentpar \argumentline{file2...}{additional files to remove (optional)}
+
+\paragraph{Useful options}
+\indentpar \optionline{-i}{request confirmation before removing each file}\\
+\indentpar \optionline{-r}{recursively remove a directory and its contents}
+
+\paragraph{Examples}
+
+\indentpar rm file.txt\\
+\indentpar rm -r directory
+
+\vspace{20mm}

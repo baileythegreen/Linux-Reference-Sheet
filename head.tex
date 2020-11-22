@@ -1,0 +1,30 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{head}
+\headerline{\large head\index{head}}{\emph{print the beginning of the file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{By default, prints out the first ten lines of each file given.}\\
+
+\paragraph{Usage}
+\indentpar head [options] \textit{file [file2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to print the top of (may be piped)}\\
+\indentpar \argumentline{file2...}{additional files (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{Prints the first ten lines of the file to standard output.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-n \textit{\#}}{specifies the number of lines to print}
+
+
+\paragraph{Examples}
+
+\indentpar head file.txt\\
+\indentpar head -n 20 file.txt file2.txt
+
+\vspace{20mm}

@@ -1,0 +1,30 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{chmod}
+\headerline{\large chmod%
+    \index{chmod}%
+    \index{permissions|see{chmod}}
+    \index{change!\textrm{permissions}|see{chmod}}
+}{\emph{manage file permissions}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Allows modification of read, write, and execute permissions for files. There are three sets of permissions: user, group, and others. The permissions are designated as: \texttt{r}, \texttt{w}, and \texttt{x} for (r)ead, (w)rite, and e(x)ecute. Extended permissions exist for more advanced usage.}\\
+
+\paragraph{Usage}
+\indentpar chmod \textit{[operations] file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{file whose permissions will be modified}
+
+\paragraph{Useful operations}
+\indentpar \optionline{+x}{make file executable for owner}\\
+\indentpar \optionline{go-w}{deny write permission to group and others}
+
+\paragraph{Examples}
+
+\indentpar chmod +x file.txt\\
+\indentpar chmod go-w file.txt
+
+\vspace{20mm}

@@ -1,0 +1,33 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{less}
+\headerline{\large less%
+    \index{less}%
+    \index{file!preview|see{less}}%
+    \index{preview|see{less}}%
+    \index{view|see{less}}}
+    {\emph{preview a file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Opens the file passed in a navigator so its contents may be examined.}\\
+
+\paragraph{Usage}
+\indentpar less \textit{[options] file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to be previewed}
+
+\paragraph{Useful options}
+\indentpar \optionline{-N}{prints line numbers}\\
+\indentpar \optionline{-s}{squeeze empty lines}\\
+\indentpar \optionline{-S}{do not wrap text}
+
+
+\paragraph{Examples}
+
+\indentpar less file.txt\\
+\indentpar less -NS file.txt
+
+\vspace{20mm}

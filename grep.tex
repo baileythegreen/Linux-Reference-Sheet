@@ -1,0 +1,49 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{grep}
+\headerline{\large grep%
+    \index{grep}%
+    \index{search!in file|see{grep}}%
+    \index{file!search|see{grep}}}%
+    
+    {\emph{file pattern searcher}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Searches within the file(s) given for a specified string. More advanced searches can be done using regular expressions.}\\
+
+\paragraph{Usage}
+\indentpar grep \textit{[options] pattern file [file2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{pattern}{the \texttt{pattern} to look for in the given file(s)}\\
+\indentpar \argumentline{file}{the file to be searched for instances of \texttt{pattern}}
+
+\paragraph{Output}
+\indentpar \textrm{Prints out each line containing a match from within \texttt{file}.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c}{outputs the number of lines containing \texttt{string}}\\
+\indentpar \optionline{-C}{print two lines before and after the match}
+\indentpar \optionline{-e \textit{pattern}}{enables the use of regular expressions}\\
+\indentpar \optionline{-f \textit{file}}{a file containing a list of \texttt{pattern}; one per line}\\
+\indentpar \optionline{-F \textit{"string"}}{specifies \texttt{pattern} should be interpreted literally}\\
+\indentpar \optionline{-i}{ignore case}\\
+\indentpar \optionline{-l}{list input files that do match}\\
+\indentpar \optionline{-L}{list input files that do not match}\\
+\indentpar \optionline{-m \textit{\#}}{stop searching after finding \texttt{\#} matches}\\
+\indentpar \optionline{-n}{print the line number for each match}\\
+\indentpar \optionline{-r}{recursively search through directories}
+\indentpar \optionline{-v}{print non-matching lines}\\
+\indentpar \optionline{-w}{matches must be full-word matches}
+
+
+\paragraph{Examples}
+
+\indentpar grep pattern file.txt\\
+\indentpar grep -Fwnc "pattern" file.txt file2.txt\\
+\indentpar grep -r pattern directory\\
+%\indentpar grep -e 
+
+\vspace{20mm}

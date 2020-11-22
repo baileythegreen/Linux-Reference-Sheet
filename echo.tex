@@ -1,0 +1,33 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{echo}
+\headerline{\large echo\index{echo}\index{evaluate|see{echo}}}{\emph{write arguments to standard output}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Writes the value of its arguments to the standard output. If variables or expressions are included, they are first evaluated, then written out.}\\
+
+\paragraph{Usage}
+\indentpar echo \textit{[options] argument [argument2...]}\\
+
+\paragraph{Arguments}
+\indentpar \argumentline{argument}{argument to evaluate and write to the shell}\\
+\indentpar \argumentline{argument2...}{additional arguments to be written out}
+
+\paragraph{Output}
+\indentpar \textrm{Prints the evaluated argument(s) to the shell in the order in which they are given. By default, the output is followed by a newline character.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-e}{enables evaluation of escaped characters}\\
+\indentpar \optionline{-n}{omits the newline character at the end of the output}
+
+
+\paragraph{Examples}
+
+\indentpar echo "this will be printed"\\
+\indentpar x=5\\
+\indentpar echo \$x\\
+\indentpar echo "The date is: \$(date +\%D)"
+
+\vspace{20mm}

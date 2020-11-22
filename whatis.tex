@@ -1,0 +1,29 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{whatis}
+\headerline{\large whatis%
+    \index{whatis}%
+    \index{help|see{man, whatis}}
+}{\emph{briefly describe what a command does}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Searches within names and one-line descriptions of commands' functions for the searchterm specified. Useful to learn what a command does, or see other commands with similar functions.}\\
+
+\paragraph{Usage}
+\indentpar whatis \textit{searchterm}
+
+\paragraph{Arguments}
+\indentpar \argumentline{searchterm}{a known command name or a string}
+
+\paragraph{Output}
+\indentpar \textrm{A list of command names and their one-line descriptions. A name/description pair will be printed if either contains \texttt{searchterm} as a full-word match. This is different to \texttt{apropos}, where \texttt{searchterm} may occur anywhere in the documentation, and may also be a substring in a larger word.}
+
+
+\paragraph{Examples}
+
+\indentpar whatis mkdir\\
+\indentpar whatis tail
+
+\vspace{20mm}

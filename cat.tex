@@ -1,0 +1,36 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{cat}
+\headerline{\large cat%
+    \index{cat}%
+    \index{print|see{cat}}%
+    \index{file!print|see{cat}}}%
+    {\emph{print a file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Prints the contents of a file to standard output.}\\
+
+\paragraph{Usage}
+\indentpar cat \textit{file [file2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the name of the file to print}\\
+\indentpar \argumentline{file2...}{the name of additional files to print (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{The complete contents of the file(s) provided as input.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-b}{number non-empty lines}\\
+\indentpar \optionline{-s}{squeeze empty lines}\\
+\indentpar \optionline{-v}{display non-printing characters}
+
+
+\paragraph{Examples}
+
+\indentpar cat -b file.txt\\
+\indentpar cat file.txt file2.txt
+
+\vspace{20mm}

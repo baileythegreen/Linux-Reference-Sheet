@@ -1,0 +1,31 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{tr}
+\headerline{\large tr\index{tr}}{\emph{text replace}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Replace specified character(s) with a different one.}\\
+
+\paragraph{Usage}
+\indentpar tr \textit{[options] string string2 file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{string}{string to replace}\\
+\indentpar \argumentline{string2}{string to use for the replacement}\\
+\indentpar \argumentline{file}{file to make substitutions in (may be piped)}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c str str2}{replace the complement of the character(s) in \texttt{str}}\\
+\indentpar \optionline{-d string}{delete the character(s) in \texttt{string}}\\
+\indentpar \optionline{-s str str2}{squeeze adjacent instances of character(s) in \texttt{str}}
+
+
+\paragraph{Examples}
+
+\indentpar tr ' ' '\t' file.txt\\
+\indentpar tr -ds ' ' file.txt\\
+\indentpar cat file.csv | tr ',' '\t'
+
+\vspace{20mm}

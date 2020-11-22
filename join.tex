@@ -1,0 +1,35 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{join}
+\headerline{\large join\index{join}}{\emph{merge two files}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Combine two files based on a common field. Similar to commands like \texttt{merge()} in R and \texttt{Pandas.DataFrame.merge()} in python. Performs an 'inner' merge, only outputting lines for key values appearing in both input files.  A specific field may be set as the key, and specific columns for the output can be set using the -o option and a list of fields given in file\#.field\# notation.}\\
+
+\paragraph{Usage}
+\indentpar join \textit{[options] file1 file2}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file1}{one of the files to be joined}\\
+\indentpar \argumentline{file2}{the other file to be joined}
+
+\paragraph{Output}
+A line containing the requested columns from each file for each matching key value.
+
+\paragraph{Useful options}
+\indentpar \optionline{-1 \textit{field\#}}{use \texttt{field\#} from \texttt{file1} as the key}\\
+\indentpar \optionline{-2 \textit{field\#}}{use \texttt{field\#} from \texttt{file2} as the key}\\
+\indentpar \optionline{-e \textit{string}}{replace empty output fields with \texttt{string}}\\
+\indentpar \optionline{-o \textit{list}}{the fields that will be output from each file}\\
+\indentpar \optionline{-t \textit{char}}{use \texttt{char} as the field delimiter; default is tab or space}\\
+\indentpar \optionline{-v \textit{\#}}{only print the unpaired lines from file\#}
+
+
+\paragraph{Examples}
+
+\indentpar join file1.tsv file2.tsv\\
+\indentpar join -2 5 -o 1.1,1.4,2.1,2.2,2.5 file1.tsv file2.tsv
+
+\vspace{20mm}

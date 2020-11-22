@@ -1,0 +1,36 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{du}
+\headerline{\large du\index{du}}{\emph{disk usage}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Prints out disk usage statistics for the specified file(s) or directories.}\\
+
+\paragraph{Usage}
+\indentpar du \textit{file [file2...]}\\
+\indentpar du \textit{directory [directory2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file whose size should be reported}\\
+\indentpar \argumentline{file2...}{additional files to report for (optional)}\\
+\indentpar \argumentline{directory}{the directory whose size should be reported}\\
+\indentpar \argumentline{directory2...}{additional directories to report for (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{Outputs the sizes of each argument passed, as well as the contents of subdirectories.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c}{display a grand total}\\
+\indentpar \optionline{-h}{print sizes in human-readable format}\\
+\indentpar \optionline{-I \textit{string}}{mask files matching \texttt{string}}
+
+
+\paragraph{Examples}
+
+\indentpar du path/to/directory\\
+\indentpar du -c -h file.txt file2.txt\\
+\indentpar du -I '*.log' *
+
+\vspace{20mm}

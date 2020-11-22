@@ -1,0 +1,36 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{cp}
+\headerline{\large cp\index{cp}\index{copy|see{cp}}}{\emph{copy a file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Makes a copy of one or more specified files or directories. There are several ways this can be used, determined by the types of arguments given: copy a file locally, with a different name; copy one or more files to a new location, retaining the original names; copy a directory and its contents locally, with a different name; copy one or more directories and their contents to a new location, retaining the original names.}\\
+
+\paragraph{Usage}
+\indentpar cp \textit{file newfile}\\
+\indentpar cp \textit{file [file2...] dest\_directory}\\
+\indentpar cp \textit{directory newdirectory}\\
+\indentpar cp \textit{directory [directory2...] dest\_directory}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to be copied}\\
+\indentpar \argumentline{newfile}{the name of the copy being created}\\
+\indentpar \argumentline{file2...}{additional files to be copied (optional)}\\
+\indentpar \argumentline{dest\_directory}{the destination location for the copies}
+\indentpar \argumentline{directory}{the directory to be copied}\\
+\indentpar \argumentline{newdirectory}{the name of the copy being created}\\
+\indentpar \argumentline{directory2...}{additional directories to be copied (optional)}
+
+\paragraph{Useful options}
+\indentpar \optionline{-n}{do not overwrite an existing file}\\
+
+
+\paragraph{Examples}
+
+\indentpar cp -n file.txt newfile.txt\\
+\indentpar cp directory/ another/directory/\\
+\indentpar cp * path/to/directory/\\
+
+\vspace{20mm}

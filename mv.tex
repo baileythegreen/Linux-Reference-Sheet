@@ -1,0 +1,38 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{mv}
+\headerline{\large mv
+    \index{mv}%
+    \index{rename|see{mv}}
+    \index{change!\textrm{filename}|see{mv}}
+}{\emph{move or rename files}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Moves one or more specified files or directories. There are several ways this can be used, determined by the types of arguments given: rename a file (move locally to a new name); move a file to a new directory, retaining the original name; rename a directory (move locally to a new name); and move a directory and its contents to a new location, retaining the original names.}\\
+
+\paragraph{Usage}
+\indentpar mv \textit{file renamed\_file}\\
+\indentpar mv \textit{file dest\_directory}\\
+\indentpar mv \textit{directory renamed\_dir}\\
+\indentpar mv \textit{directory dest\_directory}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to be moved/renamed}\\
+\indentpar \argumentline{renamed\_file}{the new name for the file}\\
+\indentpar \argumentline{dest\_directory}{the new location for the file/directory}
+\indentpar \argumentline{directory}{directory to be moved/renamed}\\
+\indentpar \argumentline{renamed\_dir}{the new name for the directory}
+
+
+\paragraph{Useful options}
+\indentpar \optionline{-i}{warn if the \texttt{mv} will overwrite an existing file}
+\indentpar \optionline{-n}{do not overwrite an existing file}
+
+\paragraph{Examples}
+\indentpar mv oldfile.txt newfile.txt\\
+\indentpar mv -n file.txt path/to/dest\_directory\\
+\indentpar mv -i directory path/to/dest\_directory
+
+\vspace{20mm}

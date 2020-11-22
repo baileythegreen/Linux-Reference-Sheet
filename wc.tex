@@ -1,0 +1,36 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{wc}
+\headerline{\large wc\index{wc}%
+\index{word count|see{wc}}%
+\index{count|see{wc}}%
+}{\emph{word count}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Prints summary statistics for the given files.}\\
+
+\paragraph{Usage}
+\indentpar wc \textit{[options] file [file2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to summarise}\\
+\indentpar \argumentline{file2...}{additional files (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{By default, prints the line, word, and character counts for the specified file(s).}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c}{print byte count}\\
+\indentpar \optionline{-l}{print line count}\\
+\indentpar \optionline{-m}{print character count}\\
+\indentpar \optionline{-w}{print word count}
+
+
+\paragraph{Examples}
+
+\indentpar wc file.txt\\
+\indentpar wc -l file.txt file2.txt
+
+\vspace{20mm}

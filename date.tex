@@ -1,0 +1,48 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{date}
+\headerline{\large date\index{date}}{\emph{display and set date and time}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{By default, prints out the current date and time. Using other options allow the user to print the information in a specific format, or to set it. Time changes for Daylight Savings Time and leap years are handled automatically.}\\
+
+\paragraph{Usage}
+\indentpar date \textit{[options]}
+
+\paragraph{Output}
+\indentpar \textrm{Outputs the date and time, applying any specified formatting.  Specific portions of the date/time can be output using \%\textit{char} notation, where \texttt{char} is one of the following:}\\
+
+\indentpar \optionline{}{}\\
+\indentpar \optionline{\%c}{date and time}\\
+\indentpar \optionline{\%D}{date}\\
+\indentpar \optionline{\%d}{numerical day}\\
+\indentpar \optionline{\%a}{abbreviated day name}\\
+\indentpar \optionline{\%A}{full day name}\\
+\indentpar \optionline{\%m}{numerical month}\\
+\indentpar \optionline{\%b}{abbreviated month name}\\
+\indentpar \optionline{\%B}{full month name}\\
+\indentpar \optionline{\%y}{two-digit year}\\
+\indentpar \optionline{\%Y}{four-digit year}\\
+\indentpar \optionline{\%C}{current century}\\
+\indentpar \optionline{\%T}{time}\\
+\indentpar \optionline{\%H}{hour (01..23)}\\
+\indentpar \optionline{\%I}{hour (01..12)}\\
+\indentpar \optionline{\%M}{minute (00..59)}\\
+\indentpar \optionline{\%S}{seconds (00..60)}\\
+\indentpar \optionline{\%:::z}{numeric time zone}\\
+\indentpar \optionline{\%Z}{alphabetical time zone abbreviation}\\
+
+\paragraph{Useful options}
+\indentpar \optionline{-u\\}{display or set the date in UTC (Coordinated Universal) time}\\
+\indentpar \optionline{+\\}{placed at the beginning of a format string to indicate a user-defined format for the output}
+
+
+\paragraph{Examples}
+
+\indentpar date \\
+\indentpar date -u\\
+\indentpar date "+TIME: \%H:\%M:\%S"
+
+\vspace{20mm}

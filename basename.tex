@@ -1,0 +1,38 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{basename}
+\headerline{\large basename%
+    \index{basename}%
+    \index{name|see{basename}}}%
+    {\emph{get the basename of a file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Removes the leading directories from the front of a file name, and can also remove a suffix, specified as a second argument, or using a flag.}\\
+
+\paragraph{Usage}
+\indentpar basename \textit{file [suffix]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the name of the file to print}\\
+\indentpar \argumentline{suffix}{suffix to remove (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{A portion of the file name.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-a}{take multiple files; should come after other flags}\\
+\indentpar \optionline{-s}{suffix (for use in conjunction with -a)}\\
+
+
+
+\paragraph{Examples}
+
+\indentpar basename path/to/directory/file.txt\\
+\indentpar basename file.txt .txt\\
+\indentpar basename -a file.txt file2.txt\\
+\indentpar basename -s .txt -a file.txt file2.txt\\
+\indentpar basename path/to/directory/file.txt .txt\\
+
+\vspace{20mm}

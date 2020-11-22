@@ -1,0 +1,27 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{tee}
+\headerline{\large tee\index{tee}}{\emph{print to the shell and a file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Prints the input to the standard output, as well as writing to the specified file. If the file already exists, by default, this will overwrite it.}\\
+
+\paragraph{Usage}
+\indentpar \textit{input} tee \textit{file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{input}{the information to print}\\
+\indentpar \argumentline{file}{the file to write the input out to}
+
+\paragraph{Useful options}
+\indentpar \optionline{-a}{append the output to the end of \texttt{file}}
+
+\paragraph{Output}
+\indentpar \textrm{The contents of the input passed to \texttt{tee}.}
+
+\paragraph{Examples}
+\indentpar cat input.txt input2.txt | tee -a file.txt
+
+\vspace{20mm}

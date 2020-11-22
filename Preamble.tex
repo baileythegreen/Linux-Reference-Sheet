@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\makeindex
+\makeindex[columns=2, title=Index, options= -s indexstyle.ist]
+\renewcommand{\familydefault}{\ttdefault}
+\newcommand{\indentpar}{\hangindent=1cm \hangafter=0}
+\usepackage{titlesec}
+\titleformat{\paragraph}[hang]
+{\normalfont\Large\rmfamily\bfseries}{\theparagraph}{}{}[]
+
+\newcommand{\headerline}[3]{%
+\par\medskip\noindent%
+\makebox[\textwidth][s]{\rlap{#1}\hfill#2\hfill\llap{\texttt{#3}}}%
+\par\medskip}
+
+\newcommand{\argumentline}[2]{%
+\parbox{.25\textwidth}{#1\hfill}%
+\parbox{.6\textwidth}{\textrm{#2}}%
+}
+
+\newcommand{\optionline}[2]{%
+\parbox{.2\textwidth}{#1\hfill}%
+\parbox{.65\textwidth}{\textrm{#2}}%
+}
+
+
+%\renewcommand{\index}[1]{\index{\textrm{##}}}
+
+\makeatletter
+     \renewcommand*\l@table{\@dottedtocline{1}{1em}{8em}}
+\makeatother
+
+\setlength{\parindent}{4em}
+\usepackage{hyperref}
+
+\title{Linux Reference}
+\author{Bailey Harrington}
+\date{September 2019}

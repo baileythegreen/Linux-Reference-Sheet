@@ -1,0 +1,32 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{column}
+\headerline{\large column\index{column}}{\emph{columnate input}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Prints input in columnar format. If input is already organised into columns, as in a table, these columns are maintained. In cases of columns with variable content length, this produces clearly-defined columns.}\\
+
+\paragraph{Usage}
+\indentpar column \textit{[options] file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{input to print as columns (may be piped)}
+
+\paragraph{Output}
+\indentpar \textrm{Prints the input as a series of tab-delimited columns.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c \textit{c}}{set width of output to \texttt{c} columns}\\
+\indentpar \optionline{-s \textit{string}}{separate columns with \texttt{string}}\\
+\indentpar \optionline{-t}{format columns like a table; useful for tabular data}
+
+
+
+\paragraph{Examples}
+
+\indentpar column -s "\t|\t" file.tsv\\
+\indentpar head file.tsv | column -t
+
+\vspace{20mm}

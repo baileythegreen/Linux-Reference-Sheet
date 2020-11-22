@@ -1,0 +1,32 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{cd}
+\headerline{\large cd\index{cd}\index{directory!change|see{cd}}}{\emph{change directory}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Navigate to a new directory. Both explicit paths or designated shortcuts may be used to specify the destination.}\\
+
+\paragraph{Usage}
+\indentpar cd \textit{[path]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{path}{the path to the destination directory}\\
+
+\paragraph{Useful options}
+\indentpar \optionline{..}{moves up one level}\\
+\indentpar \optionline{-}{moves to the previous directory}\\
+\indentpar \optionline{$\sim$}{moves to the home directory}
+
+
+\paragraph{Examples}
+
+\indentpar cd path/to/directory\\
+\indentpar cd ..\\
+\indentpar cd ../..\\
+\indentpar cd ../path\\
+\indentpar cd -\\
+\indentpar cd $\sim$\\
+
+\vspace{20mm}

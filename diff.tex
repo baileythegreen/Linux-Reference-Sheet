@@ -1,0 +1,34 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{diff}
+\headerline{\large diff\index{diff}}{\emph{check if two files are the same}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Compares two files and returns a list of their differences.}\\
+
+\paragraph{Usage}
+\indentpar diff \textit{file file2}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{one of the files to be compared}\\
+\indentpar \argumentline{file2}{the other file to be compared}
+
+\paragraph{Output}
+\indentpar \textrm{For each line in the files that differ, first the line from \texttt{file} and then the line from \texttt{file2} is printed to standard output.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-b}{ignore changes in whitespace}\\
+\indentpar \optionline{-i}{ignore changes in case}\\
+\indentpar \optionline{-q}{output only whether files differ}\\
+\indentpar \optionline{-s}{state if \texttt{file} == \texttt{file2}}\\
+\indentpar \optionline{-y}{print output side-by-side}
+
+
+\paragraph{Examples}
+
+\indentpar diff file.txt file2.txt\\
+\indentpar diff -s -y file.txt file2.txt
+
+\vspace{20mm}

@@ -1,0 +1,33 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{cut}
+\headerline{\large cut\index{cut}}{\emph{cut out vertical sections of a file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{Extracts the specified characters or fields from each line of a file, in turn, returning a series of columns.}\\
+
+\paragraph{Usage}
+\indentpar cut \textit{[options] file}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the input file (may be piped)}
+
+\paragraph{Output}
+\indentpar \textrm{The specified portions of the file are printed to standard output as columns.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-c list}{\texttt{list} specifies the desired character positions}\\
+\indentpar \optionline{-d string}{\texttt{string} represents the field delimiter; tab by default}\\
+\indentpar \optionline{-f list}{\texttt{list} specifies the desired field positions}\\
+\indentpar \optionline{-s}{suppress lines with no field delimiters}
+\indentpar \optionline{--complement}{returns the inverse of the request}
+
+
+\paragraph{Examples}
+
+\indentpar cut -d , -f 2,3,10 file.csv\\
+\indentpar cut -c 5-10,18-27 --complement file.tsv
+
+\vspace{20mm}

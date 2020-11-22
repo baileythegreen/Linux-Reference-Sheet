@@ -1,0 +1,35 @@
+\hrule
+\vspace{1mm}
+\addcontentsline{toc}{subsection}{tail}
+\headerline{\large tail\index{tail}}{\emph{print the end of the file}}{}
+\hrule
+\vspace{4mm}
+
+\paragraph{Description}
+\indentpar \raggedright \textrm{By default, prints out the last ten lines of each file given.}\\
+
+\paragraph{Usage}
+\indentpar tail \textit{[options] file [file2...]}
+
+\paragraph{Arguments}
+\indentpar \argumentline{file}{the file to print the bottom of (may be piped)}\\
+\indentpar \argumentline{file2...}{additional files (optional)}
+
+\paragraph{Output}
+\indentpar \textrm{Prints the last then lines of the file to standard output.}
+
+\paragraph{Useful options}
+\indentpar \optionline{-f}{continually update the end of the file}
+\indentpar \optionline{-n \textit{\#}}{print the last \# lines}\\
+\indentpar \optionline{-n +\#}{print the file from line \# to the end}\\
+\indentpar \optionline{-q}{ omit headers if there are multiple files}\\
+\indentpar \optionline{-r}{print the lines in reverse}\\
+
+
+
+\paragraph{Examples}
+
+\indentpar tail file.txt\\
+\indentpar tail -qn +50 file.txt file2.txt
+
+\vspace{20mm}
